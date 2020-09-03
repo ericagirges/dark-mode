@@ -28,8 +28,8 @@ const Chart = ({ sparklineData }) => {
 
   return (
     <LineChart width={700} height={500} data={formattedData} margin={{top: 5, right: 30, left: 20, bottom: 5,}}>
-      <Line type="monotype" dataKey="value" stroke="#E209AD" dot={{ stroke: "#09E28D", strokeWidth: 2 }}/>
-      <CartesianGrid stroke="#ccc" strokeDasharray="3 3" />
+      <Line type="step" dataKey="value" stroke="#E209AD" dot={{ stroke: "#09E28D", strokeWidth: 2 }}/>
+      <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
       <XAxis dataKey="date" interval={5} />
       <YAxis />
       <Tooltip />
